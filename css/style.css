@@ -1,0 +1,531 @@
+:root {
+  --primarycolor: #ffe227;
+  --secondarycolor: #203e5f;
+  --bg1: #010101;
+  --bg2: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg2);
+  color: black;
+}
+/* navigasi bar*/
+header .navbar {
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between; /* horizontal */
+  align-items: center; /* vertikal*/
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.9);
+  border-bottom: 1px solid var(--bg1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav li {
+  list-style-type: none;
+}
+header nav .navbar-logo img {
+  width: 100px;
+  cursor: pointer;
+  margin: 1px 3px;
+}
+header .navbar .navbar-nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.1s;
+}
+header .navbar .navbar-nav a::after {
+  content: "";
+  width: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primarycolor);
+  display: block;
+  transition: 0.2s linear;
+}
+header .navbar .navbar-nav a:hover::after {
+  width: 100%;
+}
+header .navbar .navbar-nav a:hover {
+  color: var(--primarycolor);
+}
+header .navbar .navbar-extra a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+header .navbar .navbar-extra a:hover {
+  color: var(--primarycolor);
+}
+#hamburger-nav {
+  display: none;
+}
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/home2-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.landing-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+.landing-page .content {
+  padding: 1.4rem 7%;
+  max-width: 55%;
+}
+.landing-page .content h1 {
+  font-size: 3.5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.landing-page .content h1 span {
+  color: var(--primarycolor);
+}
+.landing-page .content h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  font-weight: 500;
+}
+.landing-page .content h2 span {
+  color: var(--primarycolor);
+}
+.landing-page .content p {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  mix-blend-mode: difference;
+}
+main .landing-page .content button {
+  margin-top: 6rem;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 2rem;
+  background-color: var(--primarycolor);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+main .tentangkami {
+  padding: 10rem 7% 1.4rem;
+}
+main .tentangkami h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+main .tentangkami h3 span {
+  color: rgb(243, 183, 43);
+}
+main .tentangkami h2 span {
+  color: rgb(243, 183, 43);
+}
+.tentangkami .tentangkami-content {
+  flex: 1;
+  display: flex;
+}
+.tentangkami .tentangkami-content .tentangkami-image {
+  flex: 1 1 41rem;
+}
+.tentangkami .tentangkami-content .tentangkami-image img {
+  width: 100%;
+}
+.tentangkami .tentangkami-content .tentangkami-deskripsi {
+  flex: 1 1 39rem;
+  padding: 0 1rem;
+}
+.tentangkami .tentangkami-content .tentangkami-deskripsi h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.tentangkami .tentangkami-content .tentangkami-deskripsi p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+  line-height: 1.4rem;
+}
+/*Menu*/
+main .menu {
+  padding: 10rem 7% 1.4rem;
+}
+main .menu h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+main .menu h2 span {
+  color: rgb(243, 183, 43);
+}
+main .menu .menu-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+main .menu .menu-box .menu-card {
+  width: 260px;
+  height: 330px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+main .menu .menu-box .menu-card .menu-image {
+  width: 240px;
+  height: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+main .menu .menu-box .menu-card .menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+main .menu .menu-box .menu-card .menu-image:hover img {
+  transform: scale(1.1);
+}
+main .menu .menu-box .menu-card .menu-info h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+main .menu .menu-box .menu-card .menu-info h4 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* kontak kami */
+.contact {
+  padding: 9rem 7% 1.4rem;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: 3rem;
+  background-image: url("../img/kontak-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /*
+    filter: brightness(70%);*/
+}
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.contact h2 span {
+  color: var(--primarycolor);
+}
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.contact .baris {
+  display: flex;
+  margin-top: 3rem;
+  background-color: #010101;
+  border-radius: 10px;
+}
+.contact .baris .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+.contact .baris form {
+  flex: 1 1 45rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.contact .baris form .input {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg1);
+  border: 1px solid #ffffff;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.contact .baris form .input input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: black;
+  color: #ffffff;
+}
+.contact .baris form .btn-submit {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(243, 183, 43);
+  color: black;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+/* Biodata */
+main .kreator {
+  padding: 10rem 7% 1.4rem;
+}
+main .kreator h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+main .kreator h2 span {
+  color: rgb(243, 183, 43);
+}
+.kreator .profile-card {
+    width: 30rem;
+    height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+}
+.kreator .profile-card .author-img{
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.kreator .profile-card .author-img img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 999px;
+  object-position: center;
+  transition: 0.3s;
+}
+.kreator .profile-card .author-bio{
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+  .profile-card .author-biodata{
+    padding: 0 3rem;
+    text-align:left;
+    display: flex;
+    gap: 1.5rem;
+    line-height: 2rem;
+    justify-content: center;
+  }
+/* footer */
+footer {
+  background: var(--bg1);
+  padding-top: 30px;
+}
+footer .container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  gap: 5rem;
+}
+footer .footer-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--primarycolor);
+}
+footer .footer-content p,
+a {
+  color: #ffffff;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul {
+  text-align: center;
+}
+.list-link {
+  padding: 0;
+}
+.list-link li {
+  width: auto;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 1px;
+  position: relative;
+}
+.footer-content li {
+  width: auto;
+  text-align: center;
+}
+.list-link a:hover {
+  color: var(--primarycolor);
+}
+.list-socials {
+  text-align: center;
+  padding: 0;
+}
+.list-socials li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.list-socials a:hover {
+  color: var(--primarycolor);
+}
+footer .bottom-bar {
+  background: var(--primarycolor);
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 10px;
+}
+.bottom-bar p {
+  color: #010101;
+  margin: 0;
+  font-size: 13px;
+  padding: 0.3;
+}
+/*Media Query Laptop*/
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+}
+/*Media Query Tablet*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger-nav {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg1);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  header .navbar .navbar-nav ul {
+    display: block;
+    margin: 1rem;
+    padding: 2px; /*atau 8px=0.5rem*/
+  }
+  header .navbar .navbar-nav a {
+    color: var(--primarycolor);
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform: 0 0;
+  }
+  .landing-page .content p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .tentangkami .tentangkami-content {
+    flex-wrap: wrap;
+  }
+  .tentangkami .tentangkami-content .tentangkami-image img {
+    height: 30rem;
+    object-fit: cover;
+  }
+  .tentangkami .tentangkami-content .tentangkami-deskripsi {
+    padding: 0;
+  }
+  .tentangkami .tentangkami-content .tentangkami-deskripsi h3 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  .tentangkami .tentangkami-content .tentangkami-deskripsi p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container {
+    gap: 2rem;
+  }
+  .contact .baris {
+    flex-wrap: wrap;
+  }
+  .contact .baris .map {
+    height: 30rem;
+    border-radius: 10px 10px 0 0;
+  }
+}
+/*Media Query Smartphone*/
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  footer .container {
+    gap: 2rem;
+  }
+}
