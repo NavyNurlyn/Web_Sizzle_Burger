@@ -1,7 +1,7 @@
 # Sizzle Burger Restaurant Website
 
-![ScreenShoot](img/sizzleburgers1.png)
-![ScreenShoot](img/sizzleburgers2.png)
+![ScreenShoot](img/SizzleBurgers1.png)
+![ScreenShoot](img/SizzleBurgers2.png)
 [Watch the Demo](https://www.youtube.com/watch?v=yIBbt2IcKfw)
 
 A responsive website for a fictional restaurant, *Sizzle Burger*, built using HTML5, CSS3, and JavaScript. This project is part of a web development course and demonstrates skills in semantic HTML, Flexbox layout, and interactive JavaScript features.
