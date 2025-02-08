@@ -32,9 +32,8 @@ A responsive website for a fictional restaurant, *Sizzle Burger*, built using HT
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/sizzle-burger.git
-Open index.html in your browser.
-
-The website should display the restaurant's homepage, complete with menu items, contact details, and an interactive layout.
+2. Open index.html in your browser.
+3. The website should display the restaurant's homepage, complete with menu items, contact details, and an interactive layout.
 
 ## Features & Functionality
 - Homepage: Displays the hero image, restaurant name, and a brief welcome message.
@@ -45,7 +44,7 @@ The website should display the restaurant's homepage, complete with menu items, 
 
 ## Achievements
 Achieved a 5-star rating for meeting all project requirements:
-- Semantic HTML structure with appropriate use of <header>, <footer>, <main>, <article>, and <aside>.
+- Semantic HTML structure with appropriate use of header, footer, main, article, and aside.
 - Fully responsive design using Flexbox.
 - Interactive elements (dropdown menus, dynamic content) with JavaScript.
 - Clean and organized project structure with properly referenced resources.
