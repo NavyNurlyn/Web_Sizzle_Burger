@@ -1,5 +1,7 @@
-# Web_Sizzle_Burger
 # Sizzle Burger Restaurant Website
+
+![Demo Video](https://img.youtube.com/vi/yIBbt2IcKfw/hqdefault.jpg)
+[Watch the Demo](https://www.youtube.com/watch?v=yIBbt2IcKfw)
 
 A responsive website for a fictional restaurant, *Sizzle Burger*, built using HTML5, CSS3, and JavaScript. This project is part of a web development course and demonstrates skills in semantic HTML, Flexbox layout, and interactive JavaScript features.
 
@@ -16,16 +18,6 @@ A responsive website for a fictional restaurant, *Sizzle Burger*, built using HT
 - **CSS3**: Used for styling and layout, including Flexbox.
 - **JavaScript**: For interactivity and DOM manipulation.
 - **VSCode**: Code editor with custom settings.
-
-## Project Structure
-/.vscode # VSCode specific settings settings.json # VSCode project settings
-
-/css style.css # Main stylesheet for the website
-
-/img author-img.jpg # Author's image home2-image.png # Homepage hero image kontak-image.jpg # Image for the contact section logo-sizzle-burgers.png # Logo of the restaurant menu-1.jpg # Menu item image 1 menu-2.jpeg # Menu item image 2 menu-3.jpeg # Menu item image 3 menu-4.jpeg # Menu item image 4 menu-5.jpg # Menu item image 5 menu-6.jpg # Menu item image 6 tentangkami-image.png # About Us section image
-
-/javascript app.js # Main JavaScript file for interactivity
-
 
 ## Installation
 
